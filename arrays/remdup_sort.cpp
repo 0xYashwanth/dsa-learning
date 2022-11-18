@@ -1,3 +1,4 @@
+//Removes duplicate elements from a sorted array
 #include<iostream>
 using namespace std;
 int remDup(int arr[],int n)
@@ -20,8 +21,7 @@ int remDup(int arr[],int n)
 int main()
 {
     int arr[5]={1,22,22,44,44};
-    cout<<remDup(arr,5)<<endl;
-    for(int i=0;i<3;i++)
+    for(int i=0;i<remDup(arr,5);i++)
     {
         cout<<arr[i]<<endl;
     }
