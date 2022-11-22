@@ -1,12 +1,12 @@
+//gives the largest contiguous sub array sum
 #include<iostream>
 using namespace std;
 int maxSub(int arr[],int n)
 {
     int maxEnding=arr[0],res=arr[0];
-    for(int i=0;i<n;i++)
+    for(int i=1;i<n;i++)
     {
         maxEnding=max(maxEnding+arr[i],arr[i]);
-        arr[i]=maxEnding;
         res=max(res,maxEnding);
     }
     return res;
