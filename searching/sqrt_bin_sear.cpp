@@ -3,7 +3,7 @@
 using namespace std;
 int sqrtFloor(int x)
 {
-    int high=n,low=0,ans=-1; 
+    int high=x,low=0,ans=-1; 
     while(low<=high)
     {
         int mid=(high+low)/2;
