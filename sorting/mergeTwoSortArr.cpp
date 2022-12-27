@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-mergeTwoSortArr(int a[],int b[],int m,int n)
+void mergeTwoSortArr(int a[],int b[],int m,int n)
 {
     int i=0,j=0;
     while(i<m&&j<n)
