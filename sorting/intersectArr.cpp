@@ -6,7 +6,7 @@ void intersectArr(int a[], int b[], int m, int n)
     int i = 0, j = 0;
     while (i < m && j < n)
     {
-        if (ai > 0 && arr[i] == arr[i - 1])
+        if (i > 0 && a[i] == a[i - 1])
         {
             i++;
             continue;
@@ -16,12 +16,11 @@ void intersectArr(int a[], int b[], int m, int n)
         else if (a[i] > b[j])
             j++;
         else
-            (a[i] == b[j])
-            {
-                cout << a[i];
-                i++;
-                j++;
-            }
+        {
+            cout << a[i];
+            i++;
+            j++;
+        }
     }
 }
 int main()
