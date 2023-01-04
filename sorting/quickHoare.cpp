@@ -23,7 +23,7 @@ void quick(int arr[],int low ,int high)
     if(low<high)
     {
         int p=partition(arr,low,high);
-        quick(arr,low,p-1);
+        quick(arr,low,p);
         quick(arr,p+1,high);
     }
 }
