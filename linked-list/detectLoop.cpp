@@ -12,7 +12,7 @@ bool isLoop(Node *head)
 {
     Node *slow=head;
     Node *fast=head;
-    while(slow!=NULL&&fast->next!=NULL)
+    while(fast!=NULL&&fast->next!=NULL)
     {
         
         slow=slow->next;
